@@ -1,0 +1,100 @@
+/* خلفية كاملة */
+body {
+  background: linear-gradient(to bottom, #121212, #1c1c1c);
+  color: #f0f0f0;
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* صورة اللعبة */
+img {
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  max-width: 100%;
+}
+
+/* الأزرار */
+button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* الإحصائيات */
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* النجوم */
+.stars {
+  color: gold;
+  font-size: 1.4rem;
+}
+
+/* التعليقات */
+.comment-box {
+  background-color: #232323;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #333;
+}
+
+.comment-box textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  resize: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+.comment-box button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* شريط التفاعل */
+.reaction-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #ffcc00;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+}
+
+/* توسيط المحتوى */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}

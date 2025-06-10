@@ -1,0 +1,63 @@
+[debug] [2025-05-18T16:52:31.815Z] ----------------------------------------------------------------------
+[debug] [2025-05-18T16:52:31.822Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\imane habib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-05-18T16:52:31.823Z] CLI Version:   14.4.0
+[debug] [2025-05-18T16:52:31.823Z] Platform:      win32
+[debug] [2025-05-18T16:52:31.823Z] Node Version:  v22.14.0
+[debug] [2025-05-18T16:52:31.824Z] Time:          Sun May 18 2025 18:52:31 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-18T16:52:31.824Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-18T16:52:31.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-18T16:52:31.835Z] > authorizing via signed-in user (accessoiresimily@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\react\my-website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-18T17:01:58.558Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:01:58.558Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:01:58.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-05-18T17:01:59.614Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-18T17:01:59.614Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project gameverse-aea28 (GameVerse) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2025-05-18T17:02:03.299Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:03.299Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:03.300Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com [none]
+[debug] [2025-05-18T17:02:03.300Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/gameverse-aea28
+[debug] [2025-05-18T17:02:05.433Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com 200
+[debug] [2025-05-18T17:02:05.434Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2025-05-18T17:02:05.436Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:05.436Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:05.436Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2025-05-18T17:02:05.437Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/gameverse-aea28
+[debug] [2025-05-18T17:02:06.680Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2025-05-18T17:02:06.680Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2025-05-18T17:02:16.688Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:16.689Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:16.690Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com [none]
+[debug] [2025-05-18T17:02:16.690Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/gameverse-aea28
+[debug] [2025-05-18T17:02:18.440Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com 200
+[debug] [2025-05-18T17:02:18.440Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gameverse-aea28/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2025-05-18T17:02:18.446Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:18.447Z] Checked if tokens are valid: true, expires at: 1747590444511
+[debug] [2025-05-18T17:02:18.447Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gameverse-aea28 [none]
+[debug] [2025-05-18T17:02:19.522Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gameverse-aea28 200
+[debug] [2025-05-18T17:02:19.523Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gameverse-aea28 {"projectId":"gameverse-aea28","projectNumber":"304235410976","displayName":"GameVerse","name":"projects/gameverse-aea28","resources":{"hostingSite":"gameverse-aea28"},"state":"ACTIVE","etag":"1_3e0eb370-5596-455c-9430-7ea56a660bd6"}

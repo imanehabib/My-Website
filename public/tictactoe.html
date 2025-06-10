@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>🎮 لعبة تيك تاك تو</title>
+  <style>
+    body {
+      background: #222;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    table {
+      margin: auto;
+      border-collapse: collapse;
+    }
+    td {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #fff;
+      font-size: 2rem;
+      text-align: center;
+      cursor: pointer;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #0af;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 لعبة تيك تاك تو</h1>
+  <h2 id="status">دور اللاعب: X</h2>
+
+  <table>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+
+  <button onclick="resetGame()">🔁 إعادة اللعبة</button>
+
+  <script>
+    const cells = document.querySelectorAll('td');
+    const statusText = document.getElementById('status');
+    let turn = 'X';
+    let gameOver = false;
+
+    cells.forEach(cell => {
+      cell.addEventListener('click', () => {
+        if (cell.textContent === '' && !gameOver) {
+          cell.textContent = turn;
+          if (checkWinner()) {
+            statusText.textContent = `🏆 الفائز: ${turn}`;
+            gameOver = true;
+          } else if ([...cells].every(c => c.textContent !== '')) {
+            statusText.textContent = '🤝 تعادل!';
+            gameOver = true;
+          } else {
+            turn = turn === 'X' ? 'O' : 'X';
+            statusText.textContent = `دور اللاعب: ${turn}`;
+          }
+        }
+      });
+    });
+
+    function checkWinner() {
+      const winCombos = [
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]
+      ];
+      return winCombos.some(combo => {
+        const [a,b,c] = combo;
+        return (
+          cells[a].textContent === turn &&
+          cells[a].textContent === cells[b].textContent &&
+          cells[a].textContent === cells[c].textContent
+        );
+      });
+    }
+
+    function resetGame() {
+      cells.forEach(cell => cell.textContent = '');
+      turn = 'X';
+      gameOver = false;
+      statusText.textContent = 'دور اللاعب: X';
+    }
+  </script>
+
+</body>
+</html>

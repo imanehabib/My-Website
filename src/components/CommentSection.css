@@ -1,0 +1,24 @@
+.comment-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.comment-section button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.comment-section .comment {
+  border-top: 1px solid #eee;
+  padding: 8px 0;
+}
